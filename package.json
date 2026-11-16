@@ -1,0 +1,16 @@
+{
+  "name": "robguestgames.com",
+  "version": "1.0.0",
+  "description": "The website for RobGuestGames",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo \"No build step needed\"",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED"
+}
