@@ -244,3 +244,6 @@ section { padding: 6rem 0; }
 @media (max-width: 760px) { .nav-links .hide-sm { display: none; } .nav-links { gap: 1rem; } section { padding: 4rem 0; } }
 .features.three { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 640px) { .features.three { grid-template-columns: 1fr; } }
+.category { display: flex; align-items: center; gap: 1.2rem; margin: -1rem 0 2.2rem; }
+.category-title { font-size: 1.6rem; font-style: italic; font-weight: 500; margin: 0; white-space: nowrap; }
+.category::after { content: ""; flex: 1; height: 1px; background: var(--border); }
