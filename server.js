@@ -50,7 +50,8 @@ http
       return res.end("Forbidden");
     }
     // Try: exact file, then dir/index.html, then file.html (pretty URLs)
-    const candidates = [file, path.join(file, "index.html"), file + ".html"];
+    const bare = file.replace(/[\\/]+$/, "");
+    const candidates = [file, path.join(file, "index.html"), bare + ".html"];
     const found = candidates.find((f) => {
       try { return fs.statSync(f).isFile(); } catch { return false; }
     });
